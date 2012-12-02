@@ -4,12 +4,17 @@
   "manifest_version": 2,
   "description": "Descarga facilmente imagenes de tuenti.com",
   "permissions": [ 
-    "contextMenus", 
-    "tabs" 
+    "contextMenus"
   ],
   "background": {
     "scripts": ["tuenti-img.js"]
   },
+  "content_scripts": [
+    {
+      "matches": ["http://www.tuenti.com/*"],
+      "js": ["content_script.js"]
+    }
+  ],
   "icons": {
     "16": "icon-16.png",
     "48": "icon-48.png",
