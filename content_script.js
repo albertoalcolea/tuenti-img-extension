@@ -16,7 +16,7 @@ function searchPhoto() {
 
 chrome.extension.onMessage.addListener(
   function(request, sender, sendResponse) {
-  	if (request.greeting == "hello") {
+  	if (request.operation == "getImage") {
   	  imgUrl = searchPhoto();
       sendResponse({imageUrl: imgUrl});
 	}
