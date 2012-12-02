@@ -26,7 +26,6 @@ function getImageAndShow(info, tab) {
   chrome.tabs.getSelected(null, function(tab) {
     chrome.tabs.sendMessage(tab.id, {operation: "getImage"}, function(response) {
       imgUrl = response.imageUrl;
-      alert(imgUrl);
       if (imgUrl) {
         // Open new tab with the image
         chrome.tabs.create({
