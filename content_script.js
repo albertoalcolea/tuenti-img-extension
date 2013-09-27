@@ -1,6 +1,6 @@
 /*
  * Tuenti-img extension
- * Google chrome extension to download photos easily from Tuenti.
+ * Google Chrome extension to download photos easily from Tuenti.
  * 
  * Autor: Alberto Alcolea (contact@albertoalcolea.com)
  * 
